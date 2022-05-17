@@ -160,6 +160,8 @@
 let s = 'Hello world';
 s.toUpperCase();  // if we're trying to convert the string into upper case unless we're printing it in console.log(), this will not serve us
 
+console.log(s);  // will print Hello world
+
 s = s.toUpperCase();  // this will set the string into upper case 
 
-console.log(s);
+console.log(s);  // will print HELLO WORLD
