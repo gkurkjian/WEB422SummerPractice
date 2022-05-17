@@ -156,7 +156,7 @@
 // mutable 
 
 // once we create a string we cannot change it which is by default the strings are immutable in JS;
-// Look on line 163 that's the good practice to change the string if we wish to
+// Look on line 165 that's the good practice to change the string if we wish to
 let s = 'Hello world';
 s.toUpperCase();  // if we're trying to convert the string into upper case unless we're printing it in console.log(), this will not serve us
 
