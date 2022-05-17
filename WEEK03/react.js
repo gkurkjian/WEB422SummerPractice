@@ -102,18 +102,60 @@
 
 
 // example 4
-// Destructing 
+// Destructing object
 
-let user = {
-    id: 1234,
-    fname: 'George',
-    lname: 'Kurkjian'
-}
+// let user = {
+//     id: 1234,
+//     fname: 'George',
+//     lname: 'Kurkjian'
+// }
+// 
+// const fname = user.fname;  
+// 
+// // this style it's sort of blowing the object and picking part of if and work on it.
+// const { fname } = user;  // this line it's same as the line above.
+// 
+// // if the object doesn't exists, so set it to default@gmail.com
+// const { email = 'default@gmail.com' } = user;
 
-const fname = user.fname;  
+// // Destructing array
+// 
+// let cord = [43.7955, -79.3496];
+// let lat = cord[0];
+// let lng = cord[1];
+// 
+// let [lat, lng] = cord;
+// 
+// function h(options) {
+//     // options = options || {};
+//     // const id = options.id;
+//     // const name = options.name;
+//     // const isAdmin = options.isAdmin;
+// 
+//     const { id, name, isAdmin } = options;  // Destructuring style set up instead of the line above. Or, se at line 139
+//     console.log(id, name, isAdmin);
+// }
+// 
+// function h(id, name, isAdmin) {  // or just include them at the top of the function
+//     console.log(id, name, isAdmin);
+// }
+// 
+// h ({
+//     id: 8,
+//     name: 'foo',
+//     isAdmin: true
+// });
+// 
+// h();
 
-// this style it's sort of blowing the object and picking part of if and work on it.
-const { fname } = user;  // this line it's same as the line above.
 
-// if the object doesn't exists, so set it to default@gmail.com
-const { email = 'default@gmail.com' } = user;
+
+/**********************************************************************************************/
+
+// example 5
+// mutable 
+
+let s = 'Hello world';
+s = s.toUpperCase();
+
+console.log(s);
