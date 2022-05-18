@@ -183,7 +183,7 @@ let user = {
 user.name = 'George Kurkjian';
 
 user = {};  // make it empty object
-user = { id: 7, name: 'George'};  // same as the line 170
+user = { id: 7, name: 'George'};  // same as the line 176
 
 // Cloning the object
 user = { ...user };  // this is same as setting the object by the default as the line 170;
@@ -199,6 +199,6 @@ let list = [1, 2, 3, 4];
 list = [ ...list ];  // it works the same. the output will be 1, 2, 3, 4
 
 list = [ ...list, 5];  // adding some values init and it works fine.
-console.log(list);
+console.log(list);  // the output will be 1, 2, 3, 4, 5
 
 
