@@ -155,13 +155,50 @@
 // example 5
 // mutable 
 
-// once we create a string we cannot change it which is by default the strings are immutable in JS;
-// Look on line 165 that's the good practice to change the string if we wish to
-let s = 'Hello world';
-s.toUpperCase();  // if we're trying to convert the string into upper case unless we're printing it in console.log(), this will not serve us
+// // once we create a string we cannot change it which is by default the strings are immutable in JS;
+// // Look on line 165 that's the good practice to change the string if we wish to
+// let s = 'Hello world';
+// s.toUpperCase();  // if we're trying to convert the string into upper case unless we're printing it in console.log(), this will not serve us
+// 
+// console.log(s);  // will print Hello world
+// 
+// s = s.toUpperCase();  // this will set the string into upper case 
+// 
+// console.log(s);  // will print HELLO WORLD
 
-console.log(s);  // will print Hello world
 
-s = s.toUpperCase();  // this will set the string into upper case 
 
-console.log(s);  // will print HELLO WORLD
+/**********************************************************************************************/
+
+// example 6
+
+
+let user = {
+    id: 7,
+    name: 'George'
+}
+
+// key: value
+
+user.name = 'George Kurkjian';
+
+user = {};  // make it empty object
+user = { id: 7, name: 'George'};  // same as the line 170
+
+// Cloning the object
+user = { ...user };  // this is same as setting the object by the default as the line 170;
+console.log(user);
+
+user = { id: 9, name: 'George'};
+console.log(user);
+
+
+// Cloning array example
+
+let list = [1, 2, 3, 4];
+list = [ ...list ];  // it works the same. the output will be 1, 2, 3, 4
+
+list = [ ...list, 5];  // adding some values init and it works fine.
+console.log(list);
+
+
