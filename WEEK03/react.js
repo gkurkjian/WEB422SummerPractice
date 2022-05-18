@@ -170,35 +170,62 @@
 
 /**********************************************************************************************/
 
-// example 6
+// // example 6
+// 
+// 
+// let user = {
+//     id: 7,
+//     name: 'George'
+// }
+// 
+// // key: value
+// 
+// user.name = 'George Kurkjian';
+// 
+// user = {};  // make it empty object
+// user = { id: 7, name: 'George'};  // same as the line 176
+// 
+// // Cloning the object
+// user = { ...user };  // this is same as setting the object by the default as the line 170;
+// console.log(user);
+// 
+// user = { id: 9, name: 'George'};
+// console.log(user);
+// 
+// 
+// // Cloning array example
+// 
+// let list = [1, 2, 3, 4];
+// list = [ ...list ];  // it works the same. the output will be 1, 2, 3, 4
+// 
+// list = [ ...list, 5];  // adding some values init and it works fine.
+// console.log(list);  // the output will be 1, 2, 3, 4, 5
 
 
-let user = {
-    id: 7,
-    name: 'George'
+
+
+/**********************************************************************************************/
+
+// example 7
+
+// JS style writing function
+function createUserObject(id, name) {
+    return {
+        id: id,
+        name: name
+    }
 }
 
-// key: value
-
-user.name = 'George Kurkjian';
-
-user = {};  // make it empty object
-user = { id: 7, name: 'George'};  // same as the line 176
-
-// Cloning the object
-user = { ...user };  // this is same as setting the object by the default as the line 170;
+let user = createUserObject(10, 'George');
 console.log(user);
 
-user = { id: 9, name: 'George'};
+// newer JS and react style writing the same code
+function createUserObject(id, name) {
+    return {id, name};
+}
+
+// or shorter version with fat arrow function and giving default name 
+const createUserObject = (id, name = 'Unknown') => ({ id, name });
+
+let user1 = createUserObject(10, 'George');
 console.log(user);
-
-
-// Cloning array example
-
-let list = [1, 2, 3, 4];
-list = [ ...list ];  // it works the same. the output will be 1, 2, 3, 4
-
-list = [ ...list, 5];  // adding some values init and it works fine.
-console.log(list);  // the output will be 1, 2, 3, 4, 5
-
-
