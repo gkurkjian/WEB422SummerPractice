@@ -228,4 +228,4 @@ function createUserObject(id, name) {
 const createUserObject = (id, name = 'Unknown') => ({ id, name });
 
 let user1 = createUserObject(10, 'George');
-console.log(user);
+console.log(user); 
