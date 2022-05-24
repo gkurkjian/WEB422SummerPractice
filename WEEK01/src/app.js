@@ -1,4 +1,5 @@
 // npm init --y  // npm install --save-dev parcel-bundler  // npm audit fix
+// to run the server do  -->  npm start
 const { load } = require('./users');
 const ProfileCard = require('./components/profile-card');
 
