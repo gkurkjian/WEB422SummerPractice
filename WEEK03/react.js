@@ -208,24 +208,24 @@
 
 // example 7
 
-// // JS style writing function
-// function createUserObject(id, name) {
-//     return {
-//         id: id,
-//         name: name
-//     }
-// }
-// 
-// let user = createUserObject(10, 'George');
-// console.log(user);
-// 
-// // newer JS and react style writing the same code
-// function createUserObject(id, name) {
-//     return {id, name};
-// }
-// 
-// // or shorter version with fat arrow function and giving default name 
-// const createUserObject = (id, name = 'Unknown') => ({ id, name });
-// 
-// let user1 = createUserObject(10, 'George');
-// console.log(user); 
+// JS style writing function
+function createUserObject(id, name) {
+    return {
+        id: id,
+        name: name
+    }
+}
+
+let user = createUserObject(10, 'George');
+console.log(user);
+
+// newer JS and react style writing the same code
+function createUserObject(id, name) {
+    return {id, name};
+}
+
+// or shorter version with fat arrow function and giving default name 
+const createUserObject = (id, name = 'Unknown') => ({ id, name });
+
+let user1 = createUserObject(10, 'George');
+console.log(user);
